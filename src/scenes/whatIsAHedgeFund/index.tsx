@@ -15,7 +15,7 @@ type Props = {
 
 const WhatIsAHedgeFund = ({ setSelectedPage }: Props) => {
   return (
-    <section id="WhatIsAHedgeFund?" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="whatisahedgefund?" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.WhatIsAHedgeFund)}>
         {/* HEADER */}
         <motion.div

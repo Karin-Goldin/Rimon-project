@@ -1,11 +1,11 @@
 export enum SelectedPage {
   Home = "home",
-  AboutUs = "aboutUs",
-  TheStaff = "theStaff",
-  HETMED = "Hetmed",
-  MANGO = "Mango",
-  WhatIsAHedgeFund = "WhatIsAHedgeFund?",
-  ContactUs = "contactUs",
+  AboutUs = "aboutus",
+  TheStaff = "thestaff",
+  HETMED = "hetmed",
+  MANGO = "mango",
+  WhatIsAHedgeFund = "whatisahedgefund?",
+  ContactUs = "contactus",
 }
 
 export interface WorkerType {
