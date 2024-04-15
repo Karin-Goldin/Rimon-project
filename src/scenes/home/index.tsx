@@ -1,4 +1,3 @@
-import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
 import BullBear from "@/assets/bullbear.png";
