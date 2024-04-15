@@ -7,13 +7,12 @@ permissions:
   
 jobs:
   deploy:
-    permissions:
-      pages: write      
-      id-token: write  
 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
       - uses: actions/setup-node@v2
         with:
           node-version: '18'
