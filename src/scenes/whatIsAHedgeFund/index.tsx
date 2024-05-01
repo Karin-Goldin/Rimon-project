@@ -38,16 +38,16 @@ const WhatIsAHedgeFund = ({ setSelectedPage }: Props) => {
               <p className="my-5 text-xl">
               A hedge fund is a fund that makes use of financial instruments allowing to generate high returns in any market situation. Most transactions are executed while hedging the transaction at a certain level, in order to minimize the inherent risk.
               </p>
-              <p className="my-5 text-xl">In the current financial climate, which includes zero interest on savings and high managements fees, hedge funds are an alternative to mutual funds, investment houses, banks and they attract experienced investors searching attractive returns.
+              <p className="my-8 text-xl">In the current financial climate, which includes zero interest on savings and high managements fees, hedge funds are an alternative to mutual funds, investment houses, banks and they attract experienced investors searching attractive returns.
             Unlike mutual funds, which can only generate returns on a rising market (long), a hedge fund makes transactions in both directions (long and/or short) and therefore is able to generate returns when the market rises and when the market falls
               </p>
             </div>
             {/* Image Section */}
             <HText2>The Fund’s Structure</HText2>
             <div className="flex mb-8 mx-0">
-                <p className="my-5 text-xl pr-8">The legal structure of a hedge fund is a limited partnership which is comprised of up to 50 investors. The investors in the fund are in fact the partners. The general partner in HETMED Fund is Rimon Hedge Funds Ltd., which is responsible for implementing the investment strategy. 
+                <p className="my-5  py-5 text-xl pr-8">The legal structure of a hedge fund is a limited partnership which is comprised of up to 50 investors. The investors in the fund are in fact the partners. The general partner in HETMED Fund is Rimon Hedge Funds Ltd., which is responsible for implementing the investment strategy. 
                 In most hedge funds, the partners pay the general partner management fees of about 2% and success fees of 20%. The general partner in HETMED Fund is rewarded only by success fees based on real profits generated for all partners in the fund (the investors), which ensures that the interests of the fund manager and its investors are the identical.</p>
-                <img src={fundDiagram} alt="FundDigram" className="w-2/5"/>
+                <img src={fundDiagram} alt="FundDigram" className="w-1/2"/>
             </div>
 
             <Htext3>In order to protect all partners, the Fund employs two important gatekeepers:</Htext3>
