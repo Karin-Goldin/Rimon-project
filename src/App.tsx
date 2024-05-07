@@ -36,14 +36,7 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <main
-        style={{
-          backgroundImage: `url(${BackgroundImage})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "100%",
-          backgroundAttachment: "fixed",
-        }}
-      >
+      <main style={{ position: "relative" }}>
         <Home setSelectedPage={setSelectedPage} />
         <AboutUs setSelectedPage={setSelectedPage} />
         <TheStaff setSelectedPage={setSelectedPage} />
@@ -51,6 +44,21 @@ function App() {
         <Mango setSelectedPage={setSelectedPage} />
         <WhatIsAHedgeFund setSelectedPage={setSelectedPage} />
         <ContactUs setSelectedPage={setSelectedPage} />
+        <div
+          className="bg-image"
+          //  style={{
+          //   backgroundImage: `url(${BackgroundImage})`,
+          //   backgroundRepeat: "no-repeat",
+          //   backgroundSize: "cover",
+          //   backgroundAttachment: "fixed",
+          //   // transform: 'rotate(90deg)',
+          //   rotate: '90deg',
+          //   position: 'fixed',
+          //   top: '0',
+          //   width: '100vw',
+          //   height: '100vh',
+          // }}
+        ></div>
       </main>
       <Footer />
     </div>
