@@ -46,7 +46,7 @@ const WhatIsAHedgeFund = ({ setSelectedPage }: Props) => {
           </div>
           {/* Image Section */}
           <HText2>The Fund’s Structure</HText2>
-          <div className="flex mb-8 mx-0">
+          <div className=" mb-8 mx-0 flex-col flex md:flex-row">
             <p className="my-5  py-5 text-xl pr-8">
               The legal structure of a hedge fund is a limited partnership which
               is comprised of up to 50 investors. The investors in the fund are
@@ -59,7 +59,7 @@ const WhatIsAHedgeFund = ({ setSelectedPage }: Props) => {
               the fund (the investors), which ensures that the interests of the
               fund manager and its investors are the identical.
             </p>
-            <img src={fundDiagram} alt="FundDigram" className="w-1/2" />
+            <img src={fundDiagram} alt="FundDigram" className="md:w-1/2" />
           </div>
 
           <Htext3>

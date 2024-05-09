@@ -56,11 +56,11 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                 <span className="text-primary-500 text-5xl">About </span>Rimon
                 hedge funds
               </HText>
-              <p className="my-5 text-xl">
+              <p className="my-5 text-xl text-center md:text-start">
                 Rimon Hedge Funds was established in 2016 after a successful
                 3-year pilot with shareholder`s money.
               </p>
-              <p className="my-5 text-xl">
+              <p className="my-5 text-xl text-center md:text-start">
                 Varied strategies, including the development of support systems
                 for trading and algorithmic trading, in accordance with changes
                 in the economy and capital markets. The fund's managers have
@@ -81,24 +81,26 @@ const AboutUs = ({ setSelectedPage }: Props) => {
 
         {/* VIDEOS */}
         <motion.div
-          className="w-5/6 mt-5 justify-between gap-10 md:flex"
+          className="w-100  mt-5 justify-between gap-10 md:flex"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           variants={container}
         >
-          {videos.map((video: VideoType) => (
-            <div key={video.name} className="video-container">
-              <p className="font-bold font text-xl">{video.title}</p>
-              <div className="border-t-2 mt-2 border-gray-100"></div>
-              <video
-                src={video.src}
-                controls
-                className=" mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center"
-                poster={video.poster}
-              />
-            </div>
-          ))}
+          <div className="flex flex-col gap-10 md:flex-row justify-center items-center w-100">
+            {videos.map((video: VideoType) => (
+              <div key={video.name} className="video-container">
+                <p className="font-bold font text-xl">{video.title}</p>
+                <div className="border-t-2 mt-2 border-gray-100"></div>
+                <video
+                  src={video.src}
+                  controls
+                  className=" mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center"
+                  poster={video.poster}
+                />
+              </div>
+            ))}
+          </div>
         </motion.div>
       </motion.div>
     </section>

@@ -12,7 +12,7 @@ type Props = {
 };
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
-  console.log({selectedPage})
+  console.log({ selectedPage });
   const flexBetween = "flex items-center justify-between";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -29,7 +29,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             {/* LEFT SIDE */}
             <div className="h-full">
               <img
-                className="object-cover h-full"
+                className="object-contain h-full"
                 alt="logo"
                 src={Logo}
                 style={{ maxHeight: "var(--navbar-height)" }}
@@ -65,7 +65,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="What is A Hedge Fund?" 
+                    page="What is A Hedge Fund?"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />

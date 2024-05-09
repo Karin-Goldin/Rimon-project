@@ -1,4 +1,4 @@
-const { text } = require('stream/consumers')
+const { text } = require("stream/consumers");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -10,8 +10,8 @@ module.exports = {
         "gray-20": "#F8F4EB",
         "gray-50": "#EFE6E6",
         "gray-100": "#DFCCCC",
-        "gray-300" : "#d4d4d4",
-        "gray-400" : "#9ca3af",
+        "gray-300": "#d4d4d4",
+        "gray-400": "#9ca3af",
         "gray-500": "#5E0000",
         "gray-700": "#6F2A2A",
         "primary-100": "#FFE1E0",
@@ -21,10 +21,10 @@ module.exports = {
         "secondary-500": "#FFC132",
       },
       backgroundImage: {
-        'nice-texture':  "url('@/assets/nice-texture.png')",
+        "nice-texture": "url('@/assets/nice-texture.png')",
       },
       backgroundCheck: {
-        'Check':"url('@/assets/check.png')",
+        Check: "url('@/assets/check.png')",
       },
       fontFamily: {
         dmsans: ["DM Sans", "sans-serif"],
@@ -38,9 +38,10 @@ module.exports = {
       },
     },
     screens: {
-      xs: "480px",
-      sm: "768px",
-      md: "1060px",
+      xs: "320px",
+      sm: "480px",
+      md: "768px",
+      lg: "1060px",
     },
   },
   plugins: [],

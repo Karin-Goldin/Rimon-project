@@ -10,7 +10,6 @@ type Props = {
 };
 
 const Home = ({ setSelectedPage }: Props) => {
-
   return (
     <section
       id="home"
@@ -83,7 +82,7 @@ const Home = ({ setSelectedPage }: Props) => {
         </div>
       </motion.div>
       <div className="flex flex-col items-center justify-center text-xl font-bold">
-        <p className="py-8 text-center font-bold border-t border-gray-300">
+        <p className="py-8 text-center font-bold border-t border-gray-300 px-2 block">
           "We don't have to be smarter than the rest. We have to be more
           disciplined than the rest."
         </p>

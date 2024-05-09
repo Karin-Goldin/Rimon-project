@@ -5,7 +5,7 @@ import Worker from "@/scenes/TheStaff/Worker";
 import img1 from "@/assets/handshake.png";
 import michal from "@/assets/michal.jpeg";
 import Aryeh from "@/assets/Aryeh.jpeg";
-import Hila from "@/assets/Hila.jpeg"
+import Hila from "@/assets/Hila.jpeg";
 import Zivan from "@/assets/Zivan.jpeg";
 import Dan from "@/assets/Dan.jpeg";
 import Amit from "@/assets/Amit.jpeg";
@@ -42,7 +42,8 @@ const workers: Array<WorkerType> = [
   },
   {
     title: "Dan Kedar - Middle Office Manager and Data Analytics",
-    description: "Has 15 years of experience in the capital market, in the roles of risk management, analysis management, investment control, and operations. BSc and MSc degrees in economics, LLB in law and MBA in business administration with a specialization in finance and the capital market.",
+    description:
+      "Has 15 years of experience in the capital market, in the roles of risk management, analysis management, investment control, and operations. BSc and MSc degrees in economics, LLB in law and MBA in business administration with a specialization in finance and the capital market.",
     image: Dan,
   },
   {
@@ -84,7 +85,7 @@ type Props = {
 
 const TheStaff = ({ setSelectedPage }: Props) => {
   return (
-    <section id="thestaff" className="w-full h-auto py-40">
+    <section id="thestaff" className="w-full h-auto py-30">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.TheStaff)}
         className="flex flex-wrap justify-center items-center"
@@ -128,7 +129,11 @@ const TheStaff = ({ setSelectedPage }: Props) => {
               years.
             </p>
           </div>
-          <img src={img1} alt="Team Image" className="md:w-2/5 md:ml-5"></img>
+          <img
+            src={img1}
+            alt="Team Image"
+            className="hidden md:block md:w-2/5 md:ml-5"
+          ></img>
         </motion.div>
         <div className="mt-10 w-full ml-3 md:px-0">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
