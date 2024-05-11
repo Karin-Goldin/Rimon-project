@@ -24,7 +24,7 @@ const workers: Array<WorkerType> = [
   {
     title: "Aryeh Goldin - Investment manager and strategic consultant",
     description:
-      "Has 18 years of managerial experience in banking and the capital market in positions of risk management, business development and as a director in fund companies. MBA in Business Administration from the Hebrew University, BA in Economics and Communication from the Hebrew University",
+      "Has 18 years of managerial experience in banking and the capital market in positions of risk management, business development and as a director in fund companies. MBA in Business Administration from the Hebrew University, BA in Economics and Communication from the Hebrew University.",
     image: Aryeh,
   },
   {
@@ -85,7 +85,7 @@ type Props = {
 
 const TheStaff = ({ setSelectedPage }: Props) => {
   return (
-    <section id="thestaff" className="w-full h-auto py-30">
+    <section id="thestaff" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.TheStaff)}
         className="flex flex-wrap justify-center items-center"
